@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: api-hello
+  labels:
+    app: api-hello
+spec:
+  replicas: 4
+  selector:
+    matchLabels:
+      app: api-hello
+  template:
+    metadata:
+      labels:
+        app: api-hello
+    spec:
+      containers:
+      - name: api-hello
+        image: sergiogq/flask_app:0.1
+        ports:
+        - containerPort: 5000
