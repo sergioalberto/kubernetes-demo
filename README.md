@@ -25,3 +25,6 @@ kubectl apply -f ./k8s/
 ```shell script
 kubectl delete -f ./k8s/
 ```
+
+### Blog
+https://sergioalbertogq.blogspot.com/2019/10/deploying-applications-on-k8s.html
