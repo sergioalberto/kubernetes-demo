@@ -8,7 +8,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello():
-    response = {"value": "Hello from K8s!", "ip": getIp(getHost()), "host": getHost()}
+    response = {"value": "Hello from Kubernetes!", "ip": getIp(getHost()), "host": getHost()}
     print ("Responding {} ...".format(response))
     return jsonify(response)
 

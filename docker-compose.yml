@@ -1,0 +1,6 @@
+version: "3.3"
+services:
+  k8s:
+    image: sergiogq/flask_app:0.2
+    ports:
+      - "5000:5000"

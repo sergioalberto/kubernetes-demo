@@ -10,6 +10,10 @@ docker build -t sergiogq/flask_app:0.1 .
 ```shell script
 docker run -d -p 5000:5000 sergiogq/flask_app:0.1
 ```
+or
+```shell script
+docker-compose up -d
+```
 
 ## Push
 ```shell script
